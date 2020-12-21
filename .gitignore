@@ -1,0 +1,10 @@
+dist/
+eggs/
+
+*.egg
+*.egg-info
+*.pyc
+*.log
+*.txt
+
+__pycache__/
