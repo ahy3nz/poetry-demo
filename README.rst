@@ -42,3 +42,14 @@ Installing packages locally
 ---------------------------
 Some cryptic error messages when using pip to install a package locally.
 `This discussion <https://github.com/python-poetry/poetry/discussions/1135>`_ has some information, but the gist is that most problems with ``python -m pip install -e .`` may stem from your ``setup.py``, which can be resolved by actually building your package with ``poetry build``, and extracting the source distribution for a formatted ``setup.py``.
+
+Using with docker
+-----------------
+
+- Clone repo, change directory into repo
+
+- ``docker build -t poetry .`` 
+
+- ``docker run poetry``
+
+- Some basic imports and printing will be performed to test if the package (and environment) are being installed correctly

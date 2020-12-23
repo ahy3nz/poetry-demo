@@ -10,12 +10,7 @@ RUN conda create -n poetry37 python=3.7 -yq && \
     poetry install && \
     python -m pip install -e . && \
     echo "source activate poetry37" > ~/.bashrc
-#WORKDIR /poetry-demo
 
-#RUN . /opt/conda/etc/profile.d/conda.sh && \
-#    conda activate poetry37 && \
-#    poetry install  && \
-#    python -m pip install -e .
-RUN chmod +x /poetry-demo/entrypoint.sh
+
+RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/poetry-demo/entrypoint.sh"]
-#CMD ["/app/entrypoint.sh"]
