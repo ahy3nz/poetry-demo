@@ -52,4 +52,6 @@ Using with docker
 
 - ``docker run poetry``
 
+- For interactive seession: ``docker run -it poetry /bin/bash``
+
 - Some basic imports and printing will be performed to test if the package (and environment) are being installed correctly
