@@ -1,3 +1,3 @@
-import poetry.main
+import poetry_demo.main
 
-poetry.main.primary_function()
+poetry_demo.main.primary_function()
